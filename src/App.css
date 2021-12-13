@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  padding: 1px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.main-container {
+  height: 500px;
+  width: 300px;
+  background-color: #180f38;
+  border-radius: 5%;
+}
+
+.chat-container {
   color: white;
+  width: 100%;
+  height: 88%;
+  display: flex;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.chat-inner-container {
+  margin: 0 15px;
+  width: 100%;
+  height: 95%;
+  background-color: #221a42;
+  border-radius: 5%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form {
+  margin: 10px;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  border: none;
+  background-color: #fc7c00;
+  height: 100%;
+  border-radius: 10%;
+  margin-left: 20px;
+  font-size: 1rem;
+}
+
+input {
+  border-radius: 5%;
+}
+
+button:hover {
+  background-color: #bb4500;
+}
+
+.input-container {
+  height: 12%;
+  color: white;
+  border-top: 5px solid #fc7c00;
+}
+
+.message {
+  margin: 10px;
+  padding: 10px;
+  background-color: #302655;
+  border-radius: 5%;
+  width: fit-content;
 }
